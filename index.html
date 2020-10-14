@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css" type="text/css">
+     <link href='http://fonts.googleapis.com/css?family=Chelsea+Market' rel='stylesheet' type='text/css'>
+     <title>Git Web</title>
+</head>
+
+<body>
+     <a name="create"></a>
+     <div class="scrollblock block-create">
+          <h2>UTWÓRZ NOWE REPOZYTORIUM</h2>
+          <p>"UTWÓRZ KATALOG, WEJDZ DO NIEGO I WYKONAJ"
+               <br>
+               <code>git init</code>
+               <br>
+               "ABY UTWORZYNOWE REPOZYTORIUM GIT"
+          </p>
+     </div>
+     <a name="chceckout"></a>
+     <div class="scrollblock block-checkout">
+          <h2>POBIERZ REPOZYTORIUM</h2>
+          <p>
+               "UTWÓRZ KOPIĘ ROBOCZĄ LOKALNEGO REPOZYTORIUM POPRZEZ POLECENIE"
+               <br>
+               <code>git clone /path/to/repository</code>
+               <br>
+               "JEŚLI KORZYSTASZ ZE ZDALENGO SERWERA, UYJESZ POLECENIA"
+               <code>git clone username@host:/path/to/reopsitory</code>
+          </p>
+     </div>
+     <a name="trees"></a>
+     <div class="scrollblock block-trees">
+          <h2>PRZEPŁYW PRACY</h2>
+          <p>
+               "TWOJE LOKALNE REPOZYTORIUM SKŁADA SIĘ Z TRZECH "DRZEW" ZARZĄDZANYCH PRZEZ git. PIERWSZE TO "
+               <code>Katalog roboczy</code>
+               ", KTÓRY PRZECHOWUJE BIEZĄCE PLIKI. DRUGIE TO "
+               <code>Index</code>
+               ", KTÓRE DZIAŁAJĄ JAK POCZEKALNIA I OSTATNIE Z NICH TO "
+               <code>HEAD</code>
+               ", KTÓRE WSKAZUJE NA OSTATNI UTWORZONY COMMIT. "
+          </p>
+     </div>
+     <a name="add"></a>
+     <div class="scrollblock block-add">
+          <h2>ADD & COMMIT</h2>
+          <p>
+               "MOZESZ ZAPROPONOWAC ZMIANY ( DODAC JE DO "
+               <b>Index</b>
+               ") UZYWAJĄC"
+               <br>
+               <code>git add <filename></code>
+               <br>
+               <code>git add *</code>
+               <br>
+               "TO PIERWSZY KROK PODCZAS PRACY Z GITEM"
+               <br>
+               "ABY RZECZYWIŚCIE ZATWIERDZOC TE ZMIANY UZYJ"
+               <br>
+               <code>git commit -m "Commit message"</code>
+               <br>
+               "TERAZ PLIK JEST ZATWIERDZONY W "
+               <b>HEAD</b>
+               ", ALE NIE W ZDALNYM REPOZYTORIUM."
+          </p>
+     </div>
+     <a name="push"></a>
+     <div class="scrollblock block-remote">
+          <h2>WYSYŁANIE ZMIAN</h2>
+          <p>
+               "TWOJE ZMIANY SĄ OBECNIE W "
+               <b>HEAD</b>
+               "TWOJEJ KOPII ROBOCZEJ. ABY WYSŁAC TE ZMIANY DO ZDALENGO REPOZYTORIUM, WYKONAJ"
+               <br>
+               <code>git push origin master</code>
+               <br>
+               "ZMIEŃ"
+               <i>master</i>
+               "NA DOWOLNĄ GAŁĄŹ, KTÓREJ ZMIANY WYSYŁASZ."
+               <br>
+               <br>
+               "JEŚLI NIE SKLONOWAŁEŚ INSTNIEJĄCEGO REPOZYTORIUM I CHCESZ POŁĄCZYC JE ZE ZDALNYM SERWEREM, MUSISZ GO
+               ODDAC POPRZEZ"
+               <br>
+               <code>git remote add origin <server></code>
+               <br>
+               "TERAZ MASZ MOZLIWOŚC WYSYŁANIA ZMIAN NA WSKAZANY SERWER."
+               <br>
+          </p>
+     </div>
+</body>
+
+</html>
